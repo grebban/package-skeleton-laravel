@@ -2,7 +2,30 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+
+registries:
+  packagist-com:
+    type: "composer-repository"
+    url: "https://repo.packagist.com/grebban/"
+    username: grebban
+    password: ${{secrets.PACKAGIST_PASSWORD}}
+
 updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    target-branch: "main"
+    schedule:
+      interval: "weekly"
+    registries:
+      - packagist-com
+    allow:
+      - dependency-name: "grebban/*"
+        dependency-type: "all"
+    commit-message:
+      prefix: "feat"
+      include: "scope"
+    labels:
+      - "dependencies"
 
   - package-ecosystem: "github-actions"
     directory: "/"
