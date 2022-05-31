@@ -32,6 +32,7 @@
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-laravel": "^1.1",
         "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.7",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5",
@@ -53,7 +54,6 @@
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
         "phpfix": "phpcbf --standard=phpcs.xml",
         "phpcs": "phpcs --standard=phpcs.xml"
     },
