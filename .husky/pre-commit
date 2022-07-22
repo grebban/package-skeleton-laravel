@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+composer pint;
+composer fix;
+composer cs;
 composer analyse;
-composer phpcs;

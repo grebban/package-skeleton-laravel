@@ -56,8 +56,9 @@
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
-        "phpfix": "phpcbf --standard=phpcs.xml",
-        "phpcs": "phpcs --standard=phpcs.xml"
+        "fix": "vendor/bin/phpcbf --standard=phpcs.xml",
+        "cs": "vendor/bin/phpcs --standard=phpcs.xml",
+        "pint": "vendor/bin/pint"
     },
     "config": {
         "sort-packages": true,
