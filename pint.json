@@ -4,6 +4,6 @@
         "build"
     ],
     "rules": {
-
+        "no_multiline_whitespace_around_double_arrow": false
     }
 }
