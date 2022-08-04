@@ -1,5 +1,11 @@
 <?php
 
-it('can test', function () {
-    expect(true)->toBeTrue();
-});
+namespace VendorName\Skeleton\Tests;
+
+
+class ExampleTest extends TestCase {
+    public function testAssert()
+    {
+        $this->assertSame("test", "test");
+    }
+}
